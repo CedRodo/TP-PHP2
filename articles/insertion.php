@@ -19,6 +19,7 @@ if ((isset($_POST['ref'])==true) &&
         $entry->titre = $_POST['titre'];
         $entry->description = $_POST['description'];
         $entry->prix = $_POST['prix'];
+        $entry->img = $_POST['img'];
         $entry->save();
     }
 
