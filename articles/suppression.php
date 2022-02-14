@@ -17,5 +17,5 @@ $entry->delete();
 <a href="index.php">Retour vers la page d'accueil</a>
 
 <?php
-// require 'footer.php';
+require 'footer.php';
 ?>

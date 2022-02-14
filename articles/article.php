@@ -29,6 +29,4 @@ echo "<h4>Prix : </h4>"."<p>$entry->prix €</p>"."<br/><br/>";
 
 <a href="index.php">Retour vers la page d'accueil</a>
 
-<?php 
-// include "footer.php";
-?>
+<?php require "footer.php"; ?>

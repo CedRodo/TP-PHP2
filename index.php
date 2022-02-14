@@ -34,7 +34,7 @@ Dans le cas du pr&eacute;nom &quot;Monpr&eacute;nom&quot; saisi dans la partie &
 
 </p>
 
-<h2>L'ORM'</h2>
+<h2>L'ORM</h2>
 
 <h2>Le CRUD</h2>
 

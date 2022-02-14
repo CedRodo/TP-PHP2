@@ -51,7 +51,13 @@ button {
 }
 
 footer {
-    height: 22%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 button a {
@@ -168,4 +174,14 @@ legend {
 
 .headerLog a {
     text-decoration: none;
+}
+
+.darkmode {
+    background-color: rgba(0, 0, 0, 0.897) !important;
+    color:gray !important;
+}
+
+.darkmode h1 {
+    background-color: rgba(0, 0, 0, 0.897) !important;
+    color:gray !important;
 }

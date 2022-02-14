@@ -30,6 +30,4 @@ if ((isset($_POST['ref'])==true) &&
 
 
 
-<?php
-// include "footer.php";
- ?>
+<?php require "footer.php"; ?>

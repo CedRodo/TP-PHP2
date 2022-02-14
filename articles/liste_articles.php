@@ -19,6 +19,3 @@ foreach($entry as $unarticle){
 
 // Recuperer l'ensemble des donnes de la tables utilisateurs
 ?>
-<?php 
-// include "../footer.php"; 
-?>

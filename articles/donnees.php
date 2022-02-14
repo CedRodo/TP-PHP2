@@ -26,3 +26,4 @@
 <input class="formButton" type="submit" value="Envoyer" />
 </form>
 </div>
+<?php require "footer.php"; ?>

@@ -10,12 +10,14 @@
 <br/>
 <br/>
 
-<?php include 'liste_articles.php' ?>
+<?php require 'liste_articles.php' ?>
 
 <h3>Ajout d'articles</h3>
 
 <br/>
 
-<?php include 'donnees.php' ?>
+<?php require 'donnees.php' ?>
+
+
 
 

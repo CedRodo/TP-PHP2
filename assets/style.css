@@ -35,96 +35,22 @@ p {
     line-height: 25px;
 }
 
-.superGlobales p {
-    margin: 0px 20px;
+footer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-th, td {
-    border: 1px solid black;
-    margin-right: 25%;
+footer a {
+    text-decoration: none;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-th {
-    padding: 3px;
-    text-align:start;
-    background-color: rgb(127, 225, 255);
-}
-
-td {
-    padding: 3px;
-    background-color: white;
-}
-
-pre {
-    margin-left: 20px;
-    font-size:14px;
-}
-
-.tabulation {
-    display: block;
-    padding-left: 25px;
-}
-
-.contenu {
-    font-size: 22px;
-    text-decoration: underline;
-}
-
-.contfichier {
-    font-size: 20px;
-    font-style: italic;
-}
-
-.resultat {
-    font-style: italic;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.tableau {
-    margin-top: 50px;
-}
-
-.entete {
-    height: 22%;
-    padding-top: 10px;
-    margin-top: 50px;
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.entete p {
-    margin-top: 0px;
-    width: 25%;
-}
 button {
     align-items: center;
     width:fit-content;
     height: fit-content;
 }
 
-.boncommande {
-    height: 800px;
-    padding: 0px 10px;
-    background-color:rgb(245, 245, 238);
-}
-
-.tabbc {
-    display: inline;
-    width:auto;
-}
-
-footer {
-    height: 22%;
-}
-
-.tabcommande {
-    height: 49%;
+.superGlobales p {
+    margin: 0px 20px;
 }
