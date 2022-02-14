@@ -188,3 +188,7 @@ legend {
     background-color: rgba(0, 0, 0, 0.897) !important;
     color:gray !important;
 }
+
+.photosListe {
+    width: 200px;
+}
