@@ -113,16 +113,19 @@ legend {
 
 .centering {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+}
 
+.center {
+    display: block;
+    text-align: center;
 }
 
 .inserArticles {
-    width: 600px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .inserArticles fieldset input {
@@ -135,7 +138,7 @@ legend {
 }
 
 .inputTitre {
-    width: 690px !important;
+    width: 760px !important;
 }
 
 .inputPrix {

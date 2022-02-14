@@ -24,7 +24,7 @@ if ((isset($_POST['ref'])==true) &&
 
 ?>
 
-<p>L'article "<?php echo $entry->titre; ?>"" a bien été ajouté.</p>
+<p>L'article "<?php echo $entry->titre; ?>" a bien été ajouté.</p>
 <br/><br/>
 <a href="index.php">Retour vers la page d'accueil</a>
 
