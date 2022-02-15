@@ -10,13 +10,14 @@ $entry = Articles::all();
 <?php
 foreach($entry as $unarticle){
     $img=$unarticle->img; ?>
-    <article class="produit">
+    <article class="produit2">
         <p class="ref">Ref. : <?php echo "$unarticle->ref"; ?></p>
         <p class="titre"><a href="article.php?id=<?php echo "$unarticle->id";?>"><?php echo "$unarticle->titre";?></a></p>
         <p class="description"><?php echo "$unarticle->description";?>
-        <p class="prix"><span style="text-decoration: underline;">Prix :</span> <?php echo "$unarticle->prix €";?></p>
+        <p class="prix"><span>Prix : <?php echo "$unarticle->prix €";?></span></p>
         <p class="photos"><img src="<?php echo "$img";?>"></p>
-        <p class="modsup"><button><a href="modification.php?id=<?php echo $unarticle->id."&mode=modif&titre=".$unarticle->titre?>">Modifier</a></button><button><a href="suppression.php?id=<?php echo $unarticle->id;?>"> Supprimer </a></button></p>
+        <p class="modsup"><button><a href="modification.php?id=<?php echo $unarticle->id."&mode=modif&titre=".$unarticle->titre."&ref=".$unarticle->ref."&prix=".$unarticle->prix;?>">Modifier</a></button><button><a href="suppression.php?id=<?php echo $unarticle->id;?>"> Supprimer </a></button></p>
+        <hr>
     </article>
 <?php
 }

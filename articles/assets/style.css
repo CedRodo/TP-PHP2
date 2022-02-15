@@ -79,7 +79,6 @@ label {
     margin-top: 25px;
     margin-right: 50px;
     font-size: 20px;
-    text-decoration: underline;
 }
 
 input::placeholder {
@@ -102,6 +101,7 @@ fieldset input {
 
 fieldset {
     background-color: rgb(201, 191, 191);
+    border: none;
 }
 
 legend {
@@ -113,6 +113,10 @@ legend {
     margin-left: auto;
     margin-right: auto;
     padding: 5px 10px;
+}
+
+hr {
+    color: rgba(0, 255, 242, 0.301);
 }
 
 .centering {
@@ -207,12 +211,7 @@ legend {
     width: 800px;
     max-height: 1150px;
     background-color: rgba(248, 248, 248, 0.616);
-    /* border: 1px solid black; */
     margin-bottom: 100px;
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
 }
 
 .produit .titre {
@@ -274,5 +273,75 @@ legend {
 }
 
 .produit .modsup button a {    
+    color: wheat;
+}
+
+#article {
+    padding-left: 25px;
+    background-color: rgba(248, 248, 248, 0.822);
+}
+
+.produit2 {
+    padding: 15px 30px;
+    width: 100%;
+    margin-left: -100px;
+    background-color: rgba(248, 248, 248, 0.616);
+}
+
+.produit2 .titre {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.produit2 .ref {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.produit2 .titre a {
+    text-decoration: none;
+}
+
+.produit2 .description {
+    max-height:300px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.produit2 .description:hover {
+    overflow: auto;
+}
+
+.produit2 .prix {
+    margin-bottom: 50px;
+}
+
+.produit2 .prix span {
+    padding: 0px 5px 5px;
+    background-color: rgba(187, 96, 60, 0.966);
+    color: antiquewhite;
+}
+
+.produit2 .photos {
+    margin-bottom: 80px;
+}
+
+.produit2 .photos img {
+    height: 250px;
+}
+
+.produit2 .modsup { 
+    margin-bottom: 80px;
+}
+
+.produit2 .modsup button {    
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    background-color: rgb(89, 89, 134);
+    border-radius: 10px;
+}
+
+.produit2 .modsup button a {    
     color: wheat;
 }

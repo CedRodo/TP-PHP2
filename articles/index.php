@@ -1,4 +1,5 @@
-<?php require_once 'header.php' ?>
+<?php require_once 'header.php';
+session_start();?>
 
 <div class="gestionArticles">
 
@@ -9,35 +10,28 @@
 <br/>
 <br/>
 
-<?php
-    // $_POST['affichage']="cote";
-?>
-<!-- <form method="POST" action="index.php">
-<label style ="text-decoration: none;" for="articles-select">Affichage des articles:</label>
+<form style="margin: 0 0 25px 25px;" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+<label style ="text-decoration: none;" for="articles-select">Afficher les articles :</label>
 
-<select name="affichage" id="articles-select">
-    <option value="">--Choisissez un style d'affichage--</option>
-    <option value="cote">Côte à côte</option>
-    <option value="suite">À la suite</option>
+<select name="affichage" id="articles-select" onchange="this.form.submit();">
+    <option value="">--Type d'affichage--</option>
+    <option value="coteacote">Côte à côte</option>
+    <option value="dessusdessous">Dessus, Dessous</option>
 </select>
-<input type="submit">Envoyer</input>
 </form>
 <br/>
-<br/> -->
+<br/>
 
 <?php 
-// if (isset($_GET['articles'])==false) {
-//     include 'liste_articles.php';
-// } 
-// if ($_POST['affichage']=="cote") {
-//     include 'liste_articles.php';
-//     } elseif ($_POST['affichage']=="suite") {
-//     include 'liste_articles_old.php';
-//     }
-?>
+if (isset($_POST['affichage'])==false) {
+    $_POST['affichage']="coteacote";
+    }  
+if ($_POST['affichage']=="coteacote") {
+    include 'liste_articles.php';
+    } elseif ($_POST['affichage']=="dessusdessous") {
+    include 'liste_articles2.php';
+    }
 
-<?php
-require 'liste_articles.php'
 ?>
 
 <h3>Ajout d'articles</h3>
@@ -45,7 +39,7 @@ require 'liste_articles.php'
 <br/>
 
 <?php require 'donnees.php' ?>
-
+<?php require "footer.php"; ?>
 
 
 

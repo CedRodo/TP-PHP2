@@ -17,8 +17,9 @@ require_once "Articles.php";
 $entry = Articles::retrieveByPK($_GET['id']); ?>
 
 <a href="index.php">Retour vers la page d'accueil</a>
- <br/>
- <br/>
+<br/>
+<br/>
+<section id="article">
 <h4>Désignation : </h4>
 
 <p><?php echo $entry->titre; ?></p>
@@ -35,6 +36,7 @@ $entry = Articles::retrieveByPK($_GET['id']); ?>
 <h4>Prix : </h4>
 <p><?php echo $entry->prix." €"; ?></p>
 <p><img src="<?php echo $entry->img;?>"><p>
+</section>
 
 <a href="index.php">Retour vers la page d'accueil</a>
 
