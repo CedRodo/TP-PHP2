@@ -15,7 +15,7 @@ if (isset($_GET['mode'])==true) {
 
 <form class="inserArticles" method="POST" action="<?php if ($mode=='modif') { echo 'modifok.php?id='.$id; } else if ($mode=='supp') { echo 'insertion.php'; } ?>">
 <fieldset>
-    <legend>Veuillez entrer les champs de données des articles</legend>
+    <legend>Veuillez remplir les champs de données de l'article</legend>
         <label for="ref">Référence de l'article</label> <input class="inputRef" type="text" name="ref" id="ref" placeholder="Référence" required="required" />
         <label for="titre">Titre de l'article</label> <input class="inputTitre" type="text" placeholder="Article" name="titre" id="titre" min="3" max="70" required="required" /> <br />
         <label for="img">Url de l'image</label> <input class="inputImg" type="text" placeholder="Adresse URL de l'image" name="img" id="img" min="20" max="150" required="required" /> <br />

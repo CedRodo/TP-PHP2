@@ -1,5 +1,4 @@
-<?php require_once 'header.php';
-session_start();?>
+<?php require_once 'header.php'; ?>
 
 <div class="gestionArticles">
 
@@ -34,7 +33,7 @@ if ($_POST['affichage']=="coteacote") {
 
 ?>
 
-<h3>Ajout d'articles</h3>
+<h3>Ajout d'article</h3>
 
 <br/>
 
