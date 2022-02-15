@@ -14,18 +14,27 @@ require_once "Articles.php";
 <br/>
 <br/>
 <?php
-$entry = Articles::retrieveByPK($_GET['id']);
- 
-echo "<h4>Désignation : </h4>"."<p>$entry->titre</p>"."<br/><br/>";
- 
-echo "<h4>Référence : </h4>"."<p>$entry->ref</p>"."<br/><br/>";
- 
-echo "<h4>Description : </h4>";
+$entry = Articles::retrieveByPK($_GET['id']); ?>
 
-echo "<p>$entry->description</p>"."<br/><br/>";
+<a href="index.php">Retour vers la page d'accueil</a>
+ <br/>
+ <br/>
+<h4>Désignation : </h4>
 
-echo "<h4>Prix : </h4>"."<p>$entry->prix €</p>"."<br/><br/>";
-?>
+<p><?php echo $entry->titre; ?></p>
+<br/>
+<br/>
+<h4>Référence : </h4>
+<p><?php echo $entry->ref; ?></p>
+<br/>
+<br/>
+<h4>Description : </h4>
+<p><?php echo $entry->description; ?></p>
+<br/>
+<br/>
+<h4>Prix : </h4>
+<p><?php echo $entry->prix." €"; ?></p>
+<p><img src="<?php echo $entry->img;?>"><p>
 
 <a href="index.php">Retour vers la page d'accueil</a>
 

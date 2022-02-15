@@ -32,4 +32,9 @@ if (isset($_GET['mode'])==true) {
 <input class="formButton" type="submit" value="Envoyer" />
 </form>
 </div>
+<?php if (isset($_GET['mode'])==true) { 
+     if ($_GET['mode']=='modif') { ?>
+<p style="text-align: center"><button><a href="index.php">Retour</a></button></p>
+<?php } }?>
+
 <?php require "footer.php"; ?>
